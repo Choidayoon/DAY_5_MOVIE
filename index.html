@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>영화 정보 - 인터스텔라 · 기생충</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
+      background: #0f1220;
+      color: #e8eaf2;
+      line-height: 1.6;
+      padding: 40px 16px;
+    }
+    h1 { text-align: center; margin-bottom: 32px; font-size: 2rem; }
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+    }
+    .card {
+      background: #1a1f35;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 6px 20px rgba(0,0,0,.4);
+    }
+    .banner {
+      height: 140px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      font-weight: bold;
+      color: #fff;
+      text-shadow: 0 2px 6px rgba(0,0,0,.5);
+    }
+    .interstellar .banner { background: linear-gradient(135deg, #0b1a3a, #3a5ba0); }
+    .parasite .banner { background: linear-gradient(135deg, #2f4a2a, #a3b18a); }
+    .body { padding: 20px; }
+    .body h2 { font-size: 1.3rem; }
+    .body .en { color: #9aa3c4; margin-bottom: 12px; }
+    dl { display: grid; grid-template-columns: 70px 1fr; gap: 6px 10px; margin-bottom: 14px; }
+    dt { color: #8ea0ff; font-weight: bold; }
+    .tag {
+      display: inline-block;
+      background: #2a3156;
+      border-radius: 999px;
+      padding: 2px 10px;
+      font-size: .8rem;
+      margin: 0 4px 4px 0;
+    }
+    .synopsis { font-size: .95rem; color: #cfd3e6; }
+  </style>
+</head>
+<body>
+  <h1>🎬 영화 정보</h1>
+  <div class="container">
+
+    <article class="card interstellar">
+      <div class="banner">인터스텔라</div>
+      <div class="body">
+        <h2>인터스텔라</h2>
+        <p class="en">Interstellar</p>
+        <dl>
+          <dt>개봉</dt><dd>2014년</dd>
+          <dt>감독</dt><dd>크리스토퍼 놀란</dd>
+          <dt>출연</dt><dd>매튜 맥커너히, 앤 해서웨이, 제시카 차스테인, 마이클 케인</dd>
+          <dt>러닝타임</dt><dd>169분</dd>
+          <dt>수상</dt><dd>아카데미 시각효과상</dd>
+        </dl>
+        <div>
+          <span class="tag">SF</span><span class="tag">모험</span><span class="tag">드라마</span>
+        </div>
+        <p class="synopsis">
+          식량난과 환경 재앙으로 황폐해진 지구. 전직 우주비행사 쿠퍼는 인류가 이주할 새로운 행성을 찾기 위해
+          웜홀을 통과하는 위험한 우주 탐사에 나선다.
+        </p>
+      </div>
+    </article>
+
+    <article class="card parasite">
+      <div class="banner">기생충</div>
+      <div class="body">
+        <h2>기생충</h2>
+        <p class="en">Parasite</p>
+        <dl>
+          <dt>개봉</dt><dd>2019년</dd>
+          <dt>감독</dt><dd>봉준호</dd>
+          <dt>출연</dt><dd>송강호, 이선균, 조여정, 최우식, 박소담</dd>
+          <dt>러닝타임</dt><dd>132분</dd>
+          <dt>수상</dt><dd>칸 영화제 황금종려상, 아카데미 작품상 외 3개 부문</dd>
+        </dl>
+        <div>
+          <span class="tag">드라마</span><span class="tag">스릴러</span><span class="tag">블랙코미디</span>
+        </div>
+        <p class="synopsis">
+          전원 백수인 기택 가족은 기우가 고액 과외 면접을 보러 박 사장의 저택에 들어서면서
+          서로 다른 두 가족의 만남이 걷잡을 수 없는 사건으로 번져 간다.
+        </p>
+      </div>
+    </article>
+
+  </div>
+</body>
+</html>
